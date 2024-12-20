@@ -24,106 +24,108 @@
   <title>Inbox - Checking Multiple Checkboxes</title>
 </head>
 <body>
-  <!-- Main navigation header for different email sections (Primary, Social, Promotions) -->
+  <!-- Main navigation header for different inbox categories -->
   <header class="inbox-header">
-    <nav>
-      <p>Primary</p>
-      <p>Social</p>
-      <p>Promotions</p>
+    <nav class="inbox-header__nav">
+      <ul class="inbox-header__nav-list">
+        <li class="inbox-header__nav-item">Primary</li>
+        <li class="inbox-header__nav-item">Social</li>
+        <li class="inbox-header__nav-item">Promotions</li>
+      </ul>
     </nav>
   </header>
-  
+
   <!-- Main content of the inbox (list of emails) -->
   <main class="inbox">
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">JetBlue Reservations</p>
-        <p class="subject">JetBlue booking confirmation</p>
-        <p class="message">You have 24 hours from the time booking was made to cancel your flight and receive a full refund to your original form of payment, without a cancellation fee.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">JetBlue Reservations</p>
+        <p class="inbox__email-subject">JetBlue booking confirmation</p>
+        <p class="inbox__email-message">You have 24 hours from the time booking was made to cancel your flight and receive a full refund to your original form of payment, without a cancellation fee.</p>
       </div>
-      <p class="date">Dec 19</p>
-    </div>
+      <p class="inbox__email-date">Dec 19</p>
+    </section>
   
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">Google Photos</p>
-        <p class="subject">Search just got even better</p>
-        <p class="message">Introducing a smarter way to search. Explore the new and improved way to search your photos and easily find exactly what you are looking for.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">Google Photos</p>
+        <p class="inbox__email-subject">Search just got even better</p>
+        <p class="inbox__email-message">Introducing a smarter way to search. Explore the new and improved way to search your photos and easily find exactly what you are looking for.</p>
       </div>
-      <p class="date">Dec 19</p>
-    </div>
+      <p class="inbox__email-date">Dec 19</p>
+    </section>
     
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">Apple Account</p>
-        <p class="subject">Keep your apple account safe</p>
-        <p class="message">Lets check up on your Apple Account. Take a few important steps to keep your data safe and secure.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">Apple Account</p>
+        <p class="inbox__email-subject">Keep your apple account safe</p>
+        <p class="inbox__email-message">Lets check up on your Apple Account. Take a few important steps to keep your data safe and secure.</p>
       </div>
-      <p class="date">Dec 18</p>
-    </div>
+      <p class="inbox__email-date">Dec 18</p>
+    </section>
   
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">GitHub</p>
-        <p class="subject">Welcome to the community</p>
-        <p class="message">Welcome to GitHub. You are the newest member of a growing community of people who learn, share, and work together to build software. We are so excited you are here.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">GitHub</p>
+        <p class="inbox__email-subject">Welcome to the community</p>
+        <p class="inbox__email-message">Welcome to GitHub. You are the newest member of a growing community of people who learn, share, and work together to build software. We are so excited you are here.</p>
       </div>
-      <p class="date">Dec 17</p>
-    </div>
+      <p class="inbox__email-date">Dec 17</p>
+    </section>
     
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">ZipRecruiter</p>
-        <p class="subject">Have you seen these jobs?</p>
-        <p class="message">Your job alerts for Tuesday, December 17, 2024: FRONT END DEVELOPER opening at Google!</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">ZipRecruiter</p>
+        <p class="inbox__email-subject">Have you seen these jobs?</p>
+        <p class="inbox__email-message">Your job alerts for Tuesday, December 17, 2024: FRONT END DEVELOPER opening at Google!</p>
       </div>
-      <p class="date">Dec 17</p>
-    </div>
+      <p class="inbox__email-date">Dec 17</p>
+    </section>
     
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">Microsoft</p>
-        <p class="subject">Welcome to your account</p>
-        <p class="message">You're all set. One account that connects it all. Your Microsoft account logs you in to your favorite services. Sign in now!</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">Microsoft</p>
+        <p class="inbox__email-subject">Welcome to your account</p>
+        <p class="inbox__email-message">You're all set. One account that connects it all. Your Microsoft account logs you in to your favorite services. Sign in now!</p>
       </div>
-      <p class="date">Dec 16</p>
-    </div>
+      <p class="inbox__email-date">Dec 16</p>
+    </section>
     
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">LinkedIn</p>
-        <p class="subject">Liberty University recently posted</p>
-        <p class="message">Liberty University - This school year we are excited to welcome so many new international students who will be stepping onto campus for the first time.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">LinkedIn</p>
+        <p class="inbox__email-subject">Liberty University recently posted</p>
+        <p class="inbox__email-message">Liberty University - This school year we are excited to welcome so many new international students who will be stepping onto campus for the first time.</p>
       </div>
-      <p class="date">Dec 16</p>
-    </div>
+      <p class="inbox__email-date">Dec 16</p>
+    </section>
     
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">Indeed</p>
-        <p class="subject">Exploring new opportunities?</p>
-        <p class="message">Update your profile with new details. Adding your latest skills, experiences, or preferences to your profile helps us bring you the right roles that best fit you.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">Indeed</p>
+        <p class="inbox__email-subject">Exploring new opportunities?</p>
+        <p class="inbox__email-message">Update your profile with new details. Adding your latest skills, experiences, or preferences to your profile helps us bring you the right roles that best fit you.</p>
       </div>
-      <p class="date">Dec 16</p>
-    </div>
+      <p class="inbox__email-date">Dec 16</p>
+    </section>
     
-    <div class="item">
-      <input type="checkbox">
-      <div class="content">
-        <p class="email-address">Dropbox</p>
-        <p class="subject">Your Dropbox is full</p>
-        <p class="message">We're happy to offer you our 2 TB or 3 TB plans. Your Dropbox has reached full capacity, and your files are no longer syncing across devices.</p>
+    <section class="inbox__email">
+      <input class="inbox__email-checkbox" type="checkbox">
+      <div class="inbox__email-content">
+        <p class="inbox__email-sender">Dropbox</p>
+        <p class="inbox__email-subject">Your Dropbox is full</p>
+        <p class="inbox__email-message">We're happy to offer you our 2 TB or 3 TB plans. Your Dropbox has reached full capacity, and your files are no longer syncing across devices.</p>
       </div>
-      <p class="date">Dec 15</p>
-    </div>
+      <p class="inbox__email-date">Dec 15</p>
+    </section>
   </main>
 
   <!-- External JavaScript file linked with defer to improve page load -->
