@@ -3,6 +3,9 @@
   --body-bg-color: rgb(243, 243, 243);
   --inbox-bg-color: rgb(255, 255, 255);
   --inbox-ctg-color: rgb(177, 39, 39);
+  --inbox-box-shadow: rgb(181, 181, 181);
+  --email-hover-color: rgb(239, 239, 239);
+  --message-text-color: rgb(155, 155, 155);
 }
 
 /* Universal reset to eliminate default padding, margin, and border-box model */
@@ -46,4 +49,59 @@ body {
   color: var(--inbox-ctg-color);
   border-bottom: 0.188rem solid var(--inbox-ctg-color);
   border-radius: 0 0 0 0.313rem;
+}
+
+.inbox {
+  width: 85%;
+  box-shadow: 0 0 0.5rem var(--inbox-box-shadow);
+}
+
+.inbox__email {
+  background-color: var(--inbox-bg-color);
+  display: grid;
+  grid-template-columns: 1.875rem 1fr 3.125rem; /* Column sizes: checkbox, content, date */
+  column-gap: 0.625rem;
+  align-items: start;
+  padding: 0.5rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.inbox__email:hover, .inbox__email:focus {
+  background-color: var(--email-hover-color);
+}
+
+.inbox__email-checkbox {
+  margin-top: 0.313rem;
+  cursor: pointer;
+}
+
+.inbox__email-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.inbox__email-sender {
+  font-size: 1rem;
+  margin-bottom: 0.125rem;
+}
+
+.inbox__email-subject, .inbox__email-message {
+  font-size: 0.875rem;
+}
+
+.inbox__email-message {
+  color: var(--message-text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inbox__email-date {
+  font-size: 0.781rem;
+  max-width: 100%;
+}
+
+.inbox__email-sender, .inbox__email-subject, .inbox__email-date {
+  font-weight: bold;
 }
