@@ -27,6 +27,7 @@ body {
   align-items: center;
 }
 
+/* Styles for the inbox header */
 .inbox-header {
   background-color: var(--inbox-bg-color);
   width: 85%;
@@ -34,28 +35,33 @@ body {
   border-radius: 0.313rem;
 }
 
+/* Styles for the navigation list inside the inbox header */
 .inbox-header__nav-list {
   display: flex;
   gap: 1.25rem;
 }
 
+/* Individual navigation item in the inbox header */
 .inbox-header__nav-item {
   padding: 0.5rem;
   font-weight: bold;
   list-style: none;
 }
 
+/* Style for the first navigation item (active category) */
 .inbox-header__nav-item:first-of-type {
   color: var(--inbox-ctg-color);
   border-bottom: 0.188rem solid var(--inbox-ctg-color);
   border-radius: 0 0 0 0.313rem;
 }
 
+/* Styles for the inbox container */
 .inbox {
   width: 85%;
   box-shadow: 0 0 0.5rem var(--inbox-box-shadow);
 }
 
+/* Styles for individual email items in the inbox */
 .inbox__email {
   background-color: var(--inbox-bg-color);
   display: grid;
@@ -66,30 +72,36 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Hover and focus state for email items */
 .inbox__email:hover, .inbox__email:focus {
   background-color: var(--email-hover-color);
 }
 
+/* Styles for the checkbox of each email item */
 .inbox__email-checkbox {
   margin-top: 0.313rem;
   cursor: pointer;
 }
 
+/* Styles for the email content area */
 .inbox__email-content {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
+/* Styles for the sender's name */
 .inbox__email-sender {
   font-size: 1rem;
   margin-bottom: 0.125rem;
 }
 
+/* Styles for the subject of the email and message preview */
 .inbox__email-subject, .inbox__email-message {
   font-size: 0.875rem;
 }
 
+/* Styles for the email message preview */
 .inbox__email-message {
   color: var(--message-text-color);
   white-space: nowrap;
@@ -97,15 +109,18 @@ body {
   text-overflow: ellipsis;
 }
 
+/* Styles for the date of the email */
 .inbox__email-date {
   font-size: 0.781rem;
   max-width: 100%;
 }
 
+/* Make sender, subject, and date bold */
 .inbox__email-sender, .inbox__email-subject, .inbox__email-date {
   font-weight: bold;
 }
 
+/* Media queries */
 @media (min-width: 56.3125em) {
   .inbox-header__nav-list {
     gap: 6.25rem;
