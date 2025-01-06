@@ -22,6 +22,7 @@ body {
   background-color: var(--body-bg-color);
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,12 +94,14 @@ body {
 /* Styles for the sender's name */
 .inbox__email-sender {
   font-size: 1rem;
+  font-size: clamp(1rem, 0.92rem + 0.3999999999999999vw, 1.4rem);
   margin-bottom: 0.125rem;
 }
 
 /* Styles for the subject of the email and message preview */
 .inbox__email-subject, .inbox__email-message {
   font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
 }
 
 /* Styles for the email message preview */
@@ -112,6 +115,7 @@ body {
 /* Styles for the date of the email */
 .inbox__email-date {
   font-size: 0.781rem;
+  font-size: clamp(0.781rem, 0.7172000000000001rem + 0.31900000000000006vw, 1.1rem);
   max-width: 100%;
 }
 
@@ -121,7 +125,7 @@ body {
 }
 
 /* Media queries */
-@media (min-width: 56.3125em) {
+@media (min-width: 58.75em) {
   .inbox-header__nav-list {
     gap: 6.25rem;
   }
@@ -148,7 +152,7 @@ body {
   }
 }
 
-@media (min-width: 70.5625em) {
+@media (min-width: 74.8125em) {
   .inbox__email {
     grid-template-columns: 1.875rem 1fr 9.375rem;
   }
@@ -157,7 +161,7 @@ body {
   } 
 }
 
-@media (min-width: 80.0625em) {
+@media (min-width: 100.1875em) {
   .inbox__email {
     grid-template-columns: 1.875rem 1fr 21.875rem;
   }
